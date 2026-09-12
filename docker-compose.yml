@@ -1,0 +1,16 @@
+# ==============================================================================
+# Docker Compose: C Development Environment
+# Operating System Resource Management & Monitoring System
+# ==============================================================================
+
+services:
+  dev:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: os_c_dev
+    volumes:
+      - .:/workspace
+    working_dir: /workspace
+    stdin_open: true
+    tty: true

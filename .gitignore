@@ -1,0 +1,67 @@
+# ==============================================================================
+# Git Ignore Configuration
+# Operating System Resource Management & Monitoring System (C Language)
+# ==============================================================================
+
+# Build outputs & compiled binaries
+build/*
+!build/.gitkeep
+bin/
+*.out
+*.exe
+*.app
+os_simulator
+
+# Object & library files
+*.o
+*.obj
+*.so
+*.dylib
+*.a
+*.la
+*.lai
+
+# Debugging symbols & coverage
+*.dSYM/
+*.su
+*.idb
+*.pdb
+*.gcda
+*.gcno
+*.gcov
+valgrind-out.txt
+gmon.out
+
+# Logs
+logs/*
+!logs/.gitkeep
+*.log
+
+# Environment & Secrets (NEVER COMMIT)
+.env
+*.env.local
+*.pem
+*.key
+*.cert
+secrets/
+
+# OS-specific temporary files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+[Dd]esktop.ini
+
+# IDE & Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+*.sublime-project
+*.sublime-workspace
+.clangd/
+compile_commands.json
